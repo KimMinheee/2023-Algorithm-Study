@@ -1,7 +1,6 @@
 package minhee.자료구조.구간합;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Boj11659 {

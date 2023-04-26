@@ -1,5 +1,9 @@
 package minhee.자료구조.투포인터;
 
+/**
+ * BOJ2018 - 수들의 합5
+ */
+
 import java.io.*;
 
 public class Boj2018 {

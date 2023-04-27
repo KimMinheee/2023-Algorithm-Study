@@ -19,11 +19,11 @@ public class boj_1874 {
                 sb.append("+\n");
             }
             if(stack.peek()==A){
-                stack.pop();
+                stack.pop(); //해당 숫자가 나왔다면 그 숫자를 pop
                 sb.append("-\n");
             }
             else{
-                yesNo=true;
+                yesNo=true; //안되는 경우의 수 있으면 플래그 세워둠
             }
         }
         if(yesNo==true){

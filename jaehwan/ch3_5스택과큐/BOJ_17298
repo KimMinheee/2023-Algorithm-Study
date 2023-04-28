@@ -11,7 +11,7 @@ public class boj_17298 { //오큰수 구하기 (오른쪽 큰수)
         int[] A = new int[n]; // 수열을 받을 배열
         int[] result=new int[n]; //정답으로 다시 채울 배열
 
-        String[] number = bf.readLine().split(" "); //스티링 배열 선언 공백기준 나눠 받음
+        String[] number = bf.readLine().split(" "); //스트링 배열 선언 공백기준 나눠 받음
         for (int i=0;i<n;i++){
             A[i]=Integer.parseInt(number[i]);
         }

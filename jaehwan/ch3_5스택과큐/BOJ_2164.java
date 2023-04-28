@@ -12,7 +12,7 @@ public class boj_2164 {
         }
         while(q.size() > 1) {   //카드가 1장 남을때까지
             q.poll();	          // 맨 앞의 카드 버림
-            q.offer(q.poll());	// 동시에 버려진 카드를 맨 뒤에 삽입
+            q.offer(q.poll());	// 맨앞꺼내고 그걸 동시에 맨 뒤에 삽입
         }
         System.out.println(q.poll());	// 마지막으로 남은 카드 출력
     }

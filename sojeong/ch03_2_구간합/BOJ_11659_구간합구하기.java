@@ -1,4 +1,4 @@
-package com.example.algorithm.sojeong.ch03_2_구간합;
+package sojeong.ch03_2_구간합;
 
 import java.io.BufferedReader;
 import java.io.IOException;

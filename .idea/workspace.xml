@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="22f267e5-d4f3-478c-9cbb-8ec0d4e51b03" name="Changes" comment="algo: solved" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sj" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NxycilWF3D4XHAr4jo5nDmK2va" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.algorithm.sojeong.ch04_4_퀵정렬" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BOJ_1253_좋은수구하기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.algorithm.sojeong.ch03_3_투포인터.BOJ_1253_좋은수구하기" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.algorithm.sojeong.ch03_3_투포인터.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BOJ_1253_좋은수구하기" />
+        <item itemvalue="Application.BOJ_1253_좋은수구하기" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22f267e5-d4f3-478c-9cbb-8ec0d4e51b03" name="Changes" comment="" />
+      <created>1680620109478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680620109478</updated>
+      <workItem from="1680620110814" duration="605000" />
+      <workItem from="1680678952314" duration="2000" />
+      <workItem from="1680691159770" duration="2000" />
+      <workItem from="1680760454395" duration="1203000" />
+      <workItem from="1681716218281" duration="7000" />
+      <workItem from="1682340615908" duration="658000" />
+      <workItem from="1682393922896" duration="5879000" />
+      <workItem from="1682472838495" duration="212000" />
+      <workItem from="1682486422040" duration="5769000" />
+      <workItem from="1682494131515" duration="3477000" />
+      <workItem from="1682693481982" duration="601000" />
+      <workItem from="1682762439711" duration="599000" />
+      <workItem from="1682860768837" duration="1401000" />
+      <workItem from="1682915516197" duration="3825000" />
+      <workItem from="1683013544951" duration="2610000" />
+      <workItem from="1683080441721" duration="2630000" />
+      <workItem from="1683086150358" duration="5559000" />
+    </task>
+    <task id="LOCAL-00001" summary="algo: solved">
+      <created>1682500474458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682500474458</updated>
+    </task>
+    <task id="LOCAL-00002" summary="algo: solved">
+      <created>1683041478463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683041478463</updated>
+    </task>
+    <task id="LOCAL-00003" summary="algo: solved">
+      <created>1683086857411</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683086857411</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="algo: solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="algo: solved" />
+  </component>
+</project>

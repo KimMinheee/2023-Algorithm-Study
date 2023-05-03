@@ -1,0 +1,16 @@
+Index: src/main/java/com/example/algorithm/sojeong/ch03_5_스택과큐/BOJ_17298_오큰수.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.algorithm.sojeong.ch03_5_스택과큐;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.util.Stack;\r\nimport java.util.StringTokenizer;\r\n\r\npublic class BOJ_17298_오큰수 {\r\n\r\n    public static void main(String[] args) throws IOException {\r\n\r\n\r\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\r\n        Stack<Integer> stack = new Stack<Integer>();\r\n\r\n        int N = Integer.parseInt(br.readLine());\r\n        int[] seq = new int[N];\r\n\r\n\r\n        StringTokenizer st = new StringTokenizer(br.readLine(), \" \");\r\n\r\n        for(int i = 0; i < N; i++) {\r\n            seq[i] = Integer.parseInt(st.nextToken());\r\n        }\r\n\r\n\r\n        for(int i = 0; i < N; i++) {\r\n            while(!stack.isEmpty() && seq[stack.peek()] < seq[i]) {\r\n                seq[stack.pop()] = seq[i];\r\n            }\r\n\r\n            stack.push(i);\r\n        }\r\n\r\n        while(!stack.isEmpty()) {\r\n            seq[stack.pop()] = -1;\r\n        }\r\n\r\n        StringBuilder sb = new StringBuilder();\r\n        for(int i = 0; i < N; i++) {\r\n            sb.append(seq[i]).append(' ');\r\n        }\r\n\r\n        System.out.println(sb);\r\n    }\r\n}
+===================================================================
+diff --git a/src/main/java/com/example/algorithm/sojeong/ch03_5_스택과큐/BOJ_17298_오큰수.java b/src/main/java/com/example/algorithm/sojeong/ch03_5_스택과큐/BOJ_17298_오큰수.java
+--- a/src/main/java/com/example/algorithm/sojeong/ch03_5_스택과큐/BOJ_17298_오큰수.java	
++++ b/src/main/java/com/example/algorithm/sojeong/ch03_5_스택과큐/BOJ_17298_오큰수.java	
+@@ -16,6 +16,7 @@
+ 
+         int N = Integer.parseInt(br.readLine());
+         int[] seq = new int[N];
++        int[] an = new int[N];
+ 
+ 
+         StringTokenizer st = new StringTokenizer(br.readLine(), " ");

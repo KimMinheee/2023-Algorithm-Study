@@ -8,7 +8,7 @@ import java.util.*;
  * 주의)
  * - N개의 수 중 음수 가능!
  */
-public class Boj1253 {
+public class Boj1253_좋다 {
     static int N;
     static int[] data;
     static int answer = 0;

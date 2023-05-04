@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * BOJ 1546 - 평균
  */
-public class Boj1546 {
+public class Boj1546_평균 {
     static int N;
     static double[] data;
     public static void main(String[] args)throws IOException{

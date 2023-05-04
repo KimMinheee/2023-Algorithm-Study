@@ -3,7 +3,7 @@ package minhee.자료구조.구간합;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Boj11659 {
+public class Boj11659_구간합구하기4 {
     static int N,M; //수의 개수, 합을 구해야 하는 횟수
     static int[] prefixSum;
     static StringBuilder sb = new StringBuilder();

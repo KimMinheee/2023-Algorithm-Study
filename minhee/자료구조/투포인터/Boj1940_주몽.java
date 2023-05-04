@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 /**
  * Boj1940 - 주몽(주몽의 명령)
  */
-public class Boj1940{
+public class Boj1940_주몽 {
     static int N,M;
     static int[] data;
     public static void main(String[] args)throws IOException{

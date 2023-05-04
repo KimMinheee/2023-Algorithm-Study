@@ -29,20 +29,27 @@ public class BOJ_11004_k번째수 {
 
     private static void quickSort(int[] num, int start, int end) {
 
-        int pl = start;
-        int pr = end;
-        int pivot = num[(pl+pr)/2]; //가운데 수를 pivot으로
+        int boundary = partition(num, start, end); //경계값 얻기
 
-        do{
-            while(num[pl]<pivot) pl++;
-            while(num[pr]>pivot) pr--;
+        //pivot왼쪽에 정렬할 데이터가 있을 경우
+        if(start < boundary-1) quickSort(num, start, boundary-1);
 
-            if(pl <= pr)
-                swap(num, pl++, pr--); //더이상 옮길 수 없으면
-        }while(pl <= pr);
-        
-        if(start < pr) quickSort(num, start, pr); //start포인터가 현재 오른쪽 포인터보다 작으면
-        if(pl > end) quickSort(num, pl, end); //end포인터가 현재 왼쪽 포인터보다 작으면
+        //pivot오른쪽에 정렬할 데이터가 있을 경우
+        if(end > boundary) quickSort(num, boundary, end);
+    }
+
+    //파티션을 나눠주고 나눠진 경계 인덱스+1을 리턴하는 함수
+    private static int partition(int[] num, int start, int end) {
+
+        int pivot = num[(start + end) / 2]; //중앙 인덱스를 피봇으로
+        while (start <= end) {
+            while(num[start] < pivot) start++; //값이 pivot보다 작은 동안 ++
+            while (num[end] > pivot) end--; //값이 pivot보다 큰 동안 --
+            if (start <= end) {
+                swap(num, start++, end--); //pivot보다 큰 값과 작은 값 서로 바꿔주기
+            }
+        }
+        return start; //swap된 부분 오른쪽 인덱스 리턴
     }
 
     private static void swap(int[] num, int idx1, int idx2){

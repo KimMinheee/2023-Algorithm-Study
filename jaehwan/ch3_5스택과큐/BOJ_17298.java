@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class boj_17298 { //오큰수 구하기 (오른쪽 큰수)
+public class BOJ_17298 { //오큰수 구하기 (오른쪽 큰수)
     public static void main(String[] args) throws IOException {
         BufferedReader bf =new BufferedReader(new InputStreamReader(System.in));
         Stack<Integer> stack =new Stack<>();

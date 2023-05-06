@@ -27,7 +27,7 @@ public class BOJ_1517 {
             a[q] = tmp[q - start]; //반복문이 끝날때 임시배열 tmp를 다시 배열 a에 복사
         }
         return num;
-    }
+    } 
     //기존 재귀를 사용한 병합 정렬 알고리즘에서 두번째 그룹의 숫자를 tmp라는 배열에 담을때 첫번째 그룹의 원소 개수를 정답에 추가해주었다.
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader((new InputStreamReader(System.in)));

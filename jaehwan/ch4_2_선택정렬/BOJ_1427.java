@@ -10,7 +10,7 @@ public class BOJ_1427 {
         for(int i=0;i<str.length();i++){
             A[i] =Integer.parseInt(str.substring(i,i+1));
         }
-        Arrays.sort(A, Collections.reverseOrder());
+        Arrays.sort(A, Collections.reverseOrder()); //내림차순으로 할건데 객체타입이어야
         for(int i=0;i<str.length();i++){
             System.out.print(A[i]);
         }

@@ -1,4 +1,4 @@
-package sojeong.ch03_1_배열과리스트;
+package ch03_1_배열과리스트;
 
 import java.io.BufferedReader;
 import java.io.IOException;

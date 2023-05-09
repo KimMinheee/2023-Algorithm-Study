@@ -1,4 +1,4 @@
-package sojeong.ch03_3_투포인터;
+package ch03_3_투포인터;
 
 import java.io.BufferedReader;
 import java.io.IOException;

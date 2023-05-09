@@ -1,4 +1,4 @@
-package sojeong.ch03_4_슬라이딩윈도우;
+package ch03_4_슬라이딩윈도우;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

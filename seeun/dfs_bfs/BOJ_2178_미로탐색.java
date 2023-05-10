@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class BOJ_2178_미로탐색 {
@@ -22,8 +24,8 @@ public class BOJ_2178_미로탐색 {
         board = new int[n][m];
         for (int i = 0; i < n; i++) {
             String str = br.readLine();
-            for(int j=0; j<m; j++)
-                board[i][j] = Integer.parseInt(str.substring(j, j+1));
+            for (int j = 0; j < m; j++)
+                board[i][j] = Integer.parseInt(str.substring(j, j + 1));
         }
 
         search(0, 0);
@@ -33,21 +35,26 @@ public class BOJ_2178_미로탐색 {
     }
 
     private static void search(int x, int y) {
-
         int n = board.length;
         int m = board[0].length;
+
+        Queue<int[]> q = new LinkedList<>();
         visited[x][y] = true;
 
-        for (int i = 0; i < 4; i++) {
-            int newX = x + moveX[i];
-            int newY = y + moveY[i];
+        q.add(new int[]{x, y});
+        while (!q.isEmpty()) {
+            int[] node = q.poll();
+            for (int i = 0; i < 4; i++) {
+                int newX = node[0] + moveX[i];
+                int newY = node[1] + moveY[i];
 
-            if (newX>=0 && newX<n && newY>=0 && newY<m && board[newX][newY] != 0 && !visited[newX][newY]){
-                visited[newX][newY] = true;
-                board[newX][newY] = board[x][y] + 1; //현재 칸 +1해서 깊이표현
-                search(newX, newY);
+                if (newX >= 0 && newX < n && newY >= 0 && newY < m && board[newX][newY] != 0 && !visited[newX][newY]) {
+
+                    visited[newX][newY] = true;
+                    board[newX][newY] = board[node[0]][node[1]] + 1; //현재 칸 +1해서 깊이표현
+                    q.add(new int[]{newX, newY});
+                }
             }
         }
-        visited[x][y] = false;
     }
 }

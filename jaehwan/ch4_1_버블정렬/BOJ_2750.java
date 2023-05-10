@@ -18,3 +18,4 @@ public class BOJ_2750 {
         System.out.print(sb);
     }
 }//책에선 버블정렬 파트에 있지만 sort가 간단해서 sort를 사용했습니다.
+ 

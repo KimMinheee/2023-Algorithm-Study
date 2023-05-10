@@ -27,7 +27,7 @@ class BOJ_1874 {
                 System.out.println("NO");
                 break;
             }
-        }
+        } 
         if(yesNo!=true){
             System.out.println(sb);
         }

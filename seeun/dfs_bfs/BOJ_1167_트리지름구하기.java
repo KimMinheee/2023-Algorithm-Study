@@ -1,3 +1,5 @@
+package week3;
+
 import java.io.*;
 import java.util.*;
 
@@ -26,7 +28,7 @@ public class BOJ_1167_트리지름구하기 {
             int start = Integer.parseInt(st.nextToken());
             while(true){
                 int end = Integer.parseInt(st.nextToken());
-                if(end != -1)
+                if(end == -1)
                     break;
                 int weight = Integer.parseInt(st.nextToken());
                 arr[start].add(new Edge(end, weight));
@@ -48,9 +50,10 @@ public class BOJ_1167_트리지름구하기 {
         dis = new int[v+1];
         visited = new boolean[v + 1];
         bfs(max);
+
 //        다시 계산한 거리중 가장 긴 거리 고르기
         Arrays.sort(dis);
-        bw.write(dis[v]);
+        bw.write(dis[v] + "\n");
         bw.flush();
         br.close();
         bw.close();

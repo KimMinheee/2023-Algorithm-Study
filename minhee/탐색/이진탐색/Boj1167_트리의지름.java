@@ -1,24 +1,25 @@
 package minhee.탐색.이진탐색;
 import java.io.*;
 import java.util.*;
+
 public class Boj1167_트리의지름 {
     static int V; //정점의 개수
     static List<List<Edge>> data = new ArrayList<>();
     static boolean[] check;
-    static int[] tmpAnswer;
-    static int[] realAnswer;
+    static int answer = 0;
+
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         V = Integer.parseInt(br.readLine());
 
         check = new boolean[V+1];
-        tmpAnswer = new int[V+1];
-        realAnswer = new int[V+1];
 
+        //초기화
         for(int i=0; i<=V; i++){
             data.add(new ArrayList<>());
         }
 
+        //정점 연결
         for(int i=1; i<=V; i++){
             StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -28,30 +29,41 @@ public class Boj1167_트리의지름 {
 
                 if(anotherPoint == -1) break;
                 int distance = Integer.parseInt(st.nextToken());
-
                 data.get(point).add(new Edge(anotherPoint, distance));
-
             }
         }
-        for(int i=1; i<=V; i++){
-            findMaxDiameter(i,0); //i 정점을 기준으로 최대 정점인 것 찾기
-            realAnswer[i] = Arrays.stream(tmpAnswer).max().getAsInt();
-            Arrays.fill(check,false); //초기화
-            Arrays.fill(tmpAnswer,0);
-        }
-        System.out.println(Arrays.stream(realAnswer).max().getAsInt());
+
+        findMaxDiameter(1); //임의의 정점(1)에서 시작 -> root는 아님
+        System.out.println(answer);
+        br.close();
     }
-    static void findMaxDiameter(int num, int totalDistance){
+    static int findMaxDiameter(int num){
         check[num] = true;
+
+        int max = 0;
+        int secondMax = 0;
         for(int i=0; i<data.get(num).size(); i++){
-            int next = data.get(num).get(i).point;
+            int point = data.get(num).get(i).point;
+
+            if(check[point]) continue;
+
             int distance = data.get(num).get(i).distance;
-            if(!check[next]){
-                tmpAnswer[next] = totalDistance + distance;
-                findMaxDiameter(next,totalDistance+distance);
+            int sum = findMaxDiameter(point) + distance;
+
+            //가장 큰 값과 두 번쨰로 큰 값을 찾는다.
+            if(sum > max){
+                int tmp = max;
+                max = sum;
+                secondMax = tmp;
+            }
+            else if(sum > secondMax){
+                //max보다 크지는 않지만 기존의 두번째로 큰 값보다 클 경우
+                secondMax = sum;
             }
         }
+        answer = Math.max(answer, (max+secondMax));
 
+        return max;
     }
 }
 class Edge{

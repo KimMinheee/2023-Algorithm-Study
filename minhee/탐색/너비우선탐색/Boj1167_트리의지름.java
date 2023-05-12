@@ -1,4 +1,4 @@
-package minhee.탐색.이진탐색;
+package minhee.탐색.너비우선탐색;
 import java.io.*;
 import java.util.*;
 

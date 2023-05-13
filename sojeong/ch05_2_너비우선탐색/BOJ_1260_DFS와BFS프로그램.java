@@ -1,4 +1,4 @@
-package ch05_1_탐색;
+package ch05_2_너비우선탐색;
 
 import java.io.BufferedReader;
 import java.io.IOException;

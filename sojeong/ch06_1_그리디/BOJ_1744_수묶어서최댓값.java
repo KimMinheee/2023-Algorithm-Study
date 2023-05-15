@@ -35,7 +35,7 @@ public class BOJ_1744_수묶어서최댓값 {
             sum += a*b;
         }
         if(!plus.isEmpty()){
-            sum+= plus.remove(); //poll도 가능 rm이 아주 조금더 빠름
+            sum+= plus.remove(); //poll도 가능 rm이 아주 조금 더 빠름
         }
 
         while(minusAndZero.size() >1){

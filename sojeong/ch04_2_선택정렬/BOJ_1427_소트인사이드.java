@@ -1,4 +1,4 @@
-package sojeong.ch04_2_선택정렬;
+package ch04_2_선택정렬;
 
 import java.io.IOException;
 import java.io.InputStream;

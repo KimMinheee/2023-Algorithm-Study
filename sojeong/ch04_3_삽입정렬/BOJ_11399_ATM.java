@@ -1,4 +1,4 @@
-package sojeong.ch04_3_삽입정렬;
+package ch04_3_삽입정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;

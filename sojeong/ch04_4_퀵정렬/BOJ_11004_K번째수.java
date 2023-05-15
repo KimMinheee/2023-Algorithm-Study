@@ -1,4 +1,4 @@
-package sojeong.ch04_4_퀵정렬;
+package ch04_4_퀵정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package sojeong.ch03_5_스택과큐;
+package ch03_5_스택과큐;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

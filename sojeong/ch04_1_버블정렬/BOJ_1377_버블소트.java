@@ -1,4 +1,4 @@
-package sojeong.ch04_1_버블정렬;
+package ch04_1_버블정렬;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

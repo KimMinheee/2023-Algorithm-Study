@@ -8,7 +8,7 @@ public class Main {
     public static boolean isPossible(int mid) {
         int cnt = 1;
         int sum = 0;
-
+//동일한 길이 블루레이 갯수 M를 넘지 않도록
         for (int i = 0; i < N; i++) {
             if (sum + lectures[i] > mid) {
                 sum = lectures[i];
@@ -20,6 +20,8 @@ public class Main {
         return cnt <= M;
     }
 
+// 빨리 입력 받기
+// N : 강의 수 M: 블루레이 수
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
@@ -39,6 +41,7 @@ public class Main {
 
         int left = max;
         int right = sum;
+//        구할 값 (블루레이 크기 최솟값)
         int result = 0;
 
         while (left <= right) {
@@ -50,7 +53,7 @@ public class Main {
                 left = mid + 1;
             }
         }
-
+// 블루레이 크기 최솟값
         System.out.println(result);
     }
 }

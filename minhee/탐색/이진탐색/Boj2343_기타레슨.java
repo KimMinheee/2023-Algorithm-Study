@@ -6,65 +6,52 @@ package minhee.탐색.이진탐색;
 import java.util.*;
 import java.io.*;
 
-public class Boj2343_기타레슨{
-    static int N,M; //강의개수, 블루레이 개수
-    static int[] classes;
-    static int answer = Integer.MIN_VALUE;
-    static long[] prefixSum;
+public class Boj2343_기타레슨 {
+    static int N,M;
+    static int[] data;
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
+        data = new int[N];
 
-        classes = new int[N];
-        prefixSum = new long[N+1];
+        int total = 0;
+        int min = Integer.MIN_VALUE;
 
         st = new StringTokenizer(br.readLine());
         for(int i=0; i<N; i++){
-            classes[i] = Integer.parseInt(st.nextToken());
+            data[i] = Integer.parseInt(st.nextToken());
+            total += data[i];
+            min = Math.max(min, data[i]); //강의의 길이가 가장 큰 것.
         }
 
-        //정렬
-        Arrays.sort(classes);
+        //이진탐색
+        System.out.println(binarySearch(min, total));
+        br.close();
 
-        //누적합 구하기 [0, 1, 3, 6, 10, 15, 21, 28, 36, 45]
-        prefixSum();
-        System.out.println(Arrays.toString(prefixSum));
+    }
+    static int binarySearch(int low, int high){
 
+        while(low <= high){
+            int mid = (low + high) / 2;
+            int count = 0;
+            int sum = 0;
 
-        //첫번째 그룹의 값이 그 다음 그룹보다 작을 동안 계속 한칸씩 플러스
-        //맨 마지막 경계선이 끝에 다다르면 종료
-        //경계선의 개수 : M-1개, 경계선 : (N-1)/2 , (N-1)/2+M, ...
-        int[] borderLines = new int[M-1];
-        for(int i=0; i<M-1; i++){ //경계선 세팅
-            borderLines[i] = (N-1)/M + (i*M);
-        }
-
-        while(true){
-            if(borderLines[M-2]>=N-1) break; //마지막 보더라인이 맨 끝에 다다르면
-
-            for(int i=0; i<M-2; i++){
-                while(prefixSum[borderLines[i]] < (prefixSum[borderLines[i+1]]-prefixSum[borderLines[i]]) && borderLines[i]<borderLines[i+1]){
-
-                    borderLines[i] = borderLines[i]+1; //경계선 뒤로
-
-                    //그룹간 합 비교해서 answer 갱신
-                    for(int j=0; j<M-1; j++){ //0,1
-                        if(j == 0) answer =(int) Math.max(answer,prefixSum[borderLines[j]]);
-                        else answer = (int) Math.max(answer, prefixSum[borderLines[j]]-prefixSum[borderLines[j-1]]);
-                    }
-                    answer = (int) Math.max(answer,prefixSum[N] - prefixSum[borderLines[M-2]]); //마지막 보더라인
+            for(int i=0; i<N; i++){
+                if(sum + data[i] > mid){
+                    count ++; // 묶음 한 개 추가
+                    sum = 0; //이 i값의 뒤는 묶을 수 없음
                 }
+                sum += data[i];
             }
-        }
-        System.out.println(answer);
 
-    }
-    static void prefixSum(){
-        for(int i=1; i<=N; i++){
-            prefixSum[i] = prefixSum[i-1] + classes[i-1];
-        }
-    }
+            //마지막 값에 잔류하는 게 있다면 cnt +1 추가
+            if(sum != 0) count += 1;
 
+            if(count <= M) high = mid -1;
+            else low = mid + 1;
+        }
+        return low;
+    }
 }

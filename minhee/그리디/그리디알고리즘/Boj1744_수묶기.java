@@ -18,7 +18,9 @@ public class Boj1744_수묶기 {
             if(num <= 0) negativeData.add(num);
             else positiveData.add(num);
         }
-        //음수(0포함)는 오름차순, 정수는 내림차순으로 정렬
+        //음수(0포함)는 오름차순, 양수는 내림차순으로 정렬
+        //양수 : 54 32 11 11 1
+        //음수 : -5 -4 -3 -2 -1 -1 -1 0 0 0 0 0
         positiveData.sort(Collections.reverseOrder());
         Collections.sort(negativeData);
         calculate();

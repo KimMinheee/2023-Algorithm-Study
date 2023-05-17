@@ -6,7 +6,7 @@ import java.util.*;
  * BOJ 2750 - 수 정렬하기
  */
 
-public class Boj2750 {
+public class Boj2750_수정렬하기 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

@@ -3,58 +3,51 @@ import java.util.*;
 import java.io.*;
 
 /**
- * pq 사용 -> 시간초과 발생
+ * 스택 이용한 풀이
  */
 
 public class Boj17298_오큰수 {
+    static int[] data; //원본 데이터
+    static int[] answer; //정답 저장하는 배열
+    static int n;
+    static StringBuilder sb = new StringBuilder();
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringBuilder sb = new StringBuilder();
-        int N = Integer.parseInt(br.readLine());
 
-        int[] data = new int[N];
+        n = Integer.parseInt(br.readLine());
+        data = new int[n];
+        answer = new int[n];
+        Arrays.fill(answer,-1); //-1로 채움
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        //데이터 입력
-        for(int i=0; i<N; i++){
+        for(int i=0; i<n; i++){
             data[i] = Integer.parseInt(st.nextToken());
         }
 
-        for(int i=0; i<N-1; i++){
-            PriorityQueue<Data> pq = new PriorityQueue<>();
-            for(int j=i+1; j<N; j++){
-                if(data[j] > data[i]) pq.add(new Data(j,data[j]));
-            }
+        getAnswer();
 
-            if(!pq.isEmpty()){
-                Data tmp = pq.poll();
-                sb.append(tmp.value+" ");
-            }
-            else{
-                sb.append("-1 ");
-            }
-        }
-        sb.append(-1);
         bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
     }
+    static void getAnswer()
+    {
+        Stack<Integer> stack = new Stack<>(); //인덱스 넣는 스택
 
-}
-class Data implements Comparable<Data>{
-    int index;
-    int value;
+        stack.push(0); //맨 처음 인덱스 push
 
-    public Data(int index, int value){
-        this.index = index;
-        this.value = value;
+        for(int i=1; i<n; i++){
+            // stack에 값이 존재하고 스택 상단의 값보다 data[i]값이 크다면
+            while(!stack.isEmpty() && data[stack.peek()] < data[i]){
+                answer[stack.pop()] = data[i]; //정답배열에 데이터값
+            }
+            stack.push(i);
+        }
+
+        for(int i=0; i<n; i++){
+            sb.append(answer[i]).append(" ");
+        }
     }
-
-    @Override
-    public int compareTo(Data d2){
-        return this.index - d2.index;
-    }
-
 }

@@ -16,7 +16,7 @@ package minhee.자료구조.구간합;
 import java.util.*;
 import java.io.*;
 
-public class Boj10986 {
+public class Boj10986_나머지합 {
     static int N,M;//수열의 개수, 나누어떨어져야 하는 수
     static int[] prefixSum;//합 배열
     static int[] count; //나머지 저장하는 배열

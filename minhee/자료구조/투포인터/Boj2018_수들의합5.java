@@ -6,7 +6,7 @@ package minhee.자료구조.투포인터;
 
 import java.io.*;
 
-public class Boj2018 {
+public class Boj2018_수들의합5 {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

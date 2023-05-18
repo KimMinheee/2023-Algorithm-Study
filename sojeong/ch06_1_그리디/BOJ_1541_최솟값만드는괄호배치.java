@@ -1,11 +1,8 @@
 package ch06_1_그리디;
 
 import java.util.Scanner;
-
 public class BOJ_1541_최솟값만드는괄호배치 {
-
     static int ans = 0;
-
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         String data = sc.nextLine();

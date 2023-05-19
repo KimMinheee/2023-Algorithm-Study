@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * BOJ12891 - DNA 비밀번호
  */
-public class Boj12891 {
+public class Boj12891_DNA비밀번호 {
     static int S;
     static int P;
     static int[] minimums;

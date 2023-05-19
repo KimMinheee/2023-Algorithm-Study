@@ -2,7 +2,7 @@ package minhee.자료구조.구간합;
 
 import java.util.*;
 import java.io.*;
-public class Boj11660
+public class Boj11660_구간합구하기5
 {
     static int N,M; //표의 크기, 합을 구해야 하는 횟수
     static int[][] prefixSum; //구간합 저장하는 2차원 배열

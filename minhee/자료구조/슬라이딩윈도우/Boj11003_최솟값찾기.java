@@ -9,7 +9,7 @@ package minhee.자료구조.슬라이딩윈도우;
 import java.io.*;
 import java.util.*;
 
-public class Boj11003 {
+public class Boj11003_최솟값찾기 {
     static int N, L;
 
     public static void main(String[] args)throws IOException{

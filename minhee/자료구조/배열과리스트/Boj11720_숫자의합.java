@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * BOJ 11720 - 숫자의 합
  */
-public class Boj11720{
+public class Boj11720_숫자의합 {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());

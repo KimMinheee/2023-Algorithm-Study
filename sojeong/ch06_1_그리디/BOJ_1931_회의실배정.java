@@ -15,8 +15,8 @@ public class BOJ_1931_회의실배정 {
         int N = Integer.parseInt(br.readLine());
 
         /*
-		    time[][0] 은 시작시점을 의미
-		    time[][1] 은 종료시점을 의미
+		    time[][0] 은 시작시점
+		    time[][1] 은 종료시점
 		    */
 
         int[][] time = new int[N][2];
@@ -34,6 +34,7 @@ public class BOJ_1931_회의실배정 {
                 }
                 return o1[1] - o2[1];
             }
+            // (2,2)(1,2) (1,2)(2,2)
         });
         int count = 0;
         int end = 0;

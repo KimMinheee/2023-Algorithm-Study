@@ -1,3 +1,5 @@
+package week4;
+
 import java.io.*;
 
 public class BOJ_1300_K번째수 {
@@ -16,6 +18,7 @@ public class BOJ_1300_K번째수 {
         long end = n*n;
         long ans = 0;
 
+        System.out.println("end = " + end);
         //i*j로 이루어진 1차원 요소를 가지고 이분탐색 시작
         while (start <= end) {
             long mid = (start+end)/2;

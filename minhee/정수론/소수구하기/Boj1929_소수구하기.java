@@ -18,9 +18,20 @@ public class Boj1929_소수구하기 {
         int N = Integer.parseInt(st.nextToken());
 
         int[] nums = getPrimeNumber(M, N);
-        for(int i=M; i<=N; i++){
-            if(nums[i] == 0) bw.write(i+"\n");
+
+        if(M == 1) {
+            if(N > 1){
+                for(int i=2; i<=N; i++){
+                    if(nums[i] == 0) bw.write(i+"\n");
+                }
+            }
         }
+        else{
+            for(int i=M; i<=N; i++){
+                if(nums[i] == 0) bw.write(i+"\n");
+            }
+        }
+
         bw.flush();
         br.close();
         br.close();
@@ -31,10 +42,9 @@ public class Boj1929_소수구하기 {
         //소수가 아닌 수들을 1로 변경
         for(int i=2; i<=end; i++){
             if(nums[i] == 0){
-                int tmp = i;
                 int multiply = 2;
-                while(tmp * multiply <= end){
-                    nums[tmp * multiply] = 1;
+                while(i * multiply <= end){
+                    nums[i * multiply] = 1;
                     multiply++;
                 }
             }

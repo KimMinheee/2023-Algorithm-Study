@@ -10,29 +10,29 @@ public class BOJ_1929_소수구하기 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int M = Integer.parseInt(st.nextToken());
-        int N = Integer.parseInt(st.nextToken());
-        int i;
-        boolean arr[] = new boolean[N + 1];
-        arr[0] = arr[1] = true; // 0과 1은 소수에서 제외.
+        int m = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
+        primeNumber(m, n);
+    }
 
-        // 에라토스테네스의 체 사용
-        int sqrt = (int) Math.sqrt(N);
-        for (i = 2; i <= sqrt; i++) {
+    static void primeNumber(int m, int n) {
+        int[] arr = new int[n+1];
+        StringBuilder sb = new StringBuilder();
 
-            for (int j = 2; j <= N / i; j++) {
-                if (arr[i * j] == true) {
-                    continue;
-                } else {
-                    arr[i * j] = true;
-                }
-            }
+        for (int i = 2; i <= n; i++) {//배열 초기화
+            arr[i] = i;
         }
 
-        for (i = M; i <= N; i++) {
-            if (arr[i] == false) {
-                System.out.println(i);
+        for (int i = 2; i <= n; i++) {
+            if (arr[i] == 0) continue; //이미 지워진 수는 건너뛴다
+            for (int j = i+i; j <= n; j += i) { //2부터 시작해서 i의 배수들을 배열에서 지워준다
+                arr[j] = 0;
             }
         }
+        for (int i = m; i <= n; i++) {
+            if (arr[i] != 0)
+                sb.append(i + "\n");
+        }
+        System.out.print(sb);
     }
 }

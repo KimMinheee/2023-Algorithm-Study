@@ -20,7 +20,7 @@ public class BOJ_11689_오일러피 {
             }
 
         }
-        while (n > 1) { // 아직 소인수 구성이 남아 있을 때
+        if (n > 1) { // 아직 소인수 구성이 남아 있을 때
             pi = pi -pi / n;
         }
         System.out.println(pi);

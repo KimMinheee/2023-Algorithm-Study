@@ -48,4 +48,3 @@ public class BOJ_1016_제곱아닌수 {
         br.close();
     }
 }
-

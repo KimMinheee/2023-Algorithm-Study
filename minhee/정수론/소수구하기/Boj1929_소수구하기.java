@@ -19,7 +19,7 @@ public class Boj1929_소수구하기 {
 
         int[] nums = getPrimeNumber(M, N);
 
-        if(M == 1) {
+        if(M == 1) { //N==1일때는 아무것도 출력하지 않는다.
             if(N > 1){
                 for(int i=2; i<=N; i++){
                     if(nums[i] == 0) bw.write(i+"\n");
@@ -37,11 +37,11 @@ public class Boj1929_소수구하기 {
         br.close();
     }
     static int[] getPrimeNumber(int start, int end){
-        int[] nums = new int[end+1]; //N+1개
+        int[] nums = new int[end+1]; //N+1개 , 초기화 0
 
         //소수가 아닌 수들을 1로 변경
         for(int i=2; i<=end; i++){
-            if(nums[i] == 0){
+            if(nums[i] == 0){ //소수
                 int multiply = 2;
                 while(i * multiply <= end){
                     nums[i * multiply] = 1;

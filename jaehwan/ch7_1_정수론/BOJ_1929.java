@@ -8,7 +8,7 @@ public class BOJ_1929 {
 
         for(int i=start; i<=end;i++){
             int num=Prime(i);
-            if(num > 0 ){
+            if(num > 0 ){ //밑에서 이걸로 판단한다
                 System.out.println(i);
             }
         }
@@ -17,7 +17,7 @@ public class BOJ_1929 {
         int point = 0;
         if(a < 2) { return point; }
         if(a == 2) {point=1; return point; } //이 부분 빼면 틀린다.
-        if(a % 2 == 0) { return point; }
+        if(a % 2 == 0) { return point; } //2의 배수 컷
         for(int i = 2; i <= Math.sqrt(a); i++) {
             if(a % i == 0) { return point; }
         }

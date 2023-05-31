@@ -65,7 +65,7 @@ class Node {
     int p;
     int q;
 
-    public Node(int b, int p, int q) {
+    public Node(int b, int p, int q) {//b는 다음 노드의 번호, p는 분자, q는 분모
         super();
         this.b = b;
         this.p = p;

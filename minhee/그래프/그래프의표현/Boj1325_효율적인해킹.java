@@ -7,7 +7,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 /**
- * [DFS/BFS]p1325_효율적인해킹
+ * [DFS/BFS]p1325_효율적인해킹 / 1167(트리노드구하기)
  * 아이디어:
  * - 오->왼 방향으로 인접리스트에 값 넣기
  * - visited,결과 배열(연결된 컴 수 저장)
@@ -38,7 +38,7 @@ class Boj1325_효율적인해킹 {
             st = new StringTokenizer(br.readLine());
             int slave = Integer.parseInt(st.nextToken());
             int master = Integer.parseInt(st.nextToken());
-            list.get(master).add(slave);
+            list.get(master).add(slave); //리스트 인덱스 master, slave
         }
 
         //1~n 경우

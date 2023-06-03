@@ -1,5 +1,8 @@
 package minhee.정수론.확장유클리드호제법;
 
+
+import java.util.Scanner;
+
 public class Boj21568_확장유클리드 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

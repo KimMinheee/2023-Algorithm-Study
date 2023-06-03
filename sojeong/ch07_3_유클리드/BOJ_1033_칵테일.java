@@ -14,7 +14,7 @@ public class BOJ_1033_칵테일 {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int N = sc.nextInt(); // 재료 개수
         A = new ArrayList[N]; // 인접 리스트
         visited = new boolean[N]; // dfs 탐색할 때 탐색 여부 저장할 배열

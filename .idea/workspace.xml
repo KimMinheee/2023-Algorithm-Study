@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="22f267e5-d4f3-478c-9cbb-8ec0d4e51b03" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sojeong Park &lt;creerari01@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PH0FW2RAvZ874HovM4qDVDJCEt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/Algorithm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch07_3_유클리드" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BOJ_2251_물의양">
+    <configuration name="BOJ_1033_칵테일" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch07_3_유클리드.BOJ_1033_칵테일" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch07_3_유클리드.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ_1325_효율적으로해킹" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch08_1_그래프.BOJ_1325_효율적으로해킹" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch08_1_그래프.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ_1707_이분그래프판별" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch08_1_그래프.BOJ_1707_이분그래프판별" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch08_1_그래프.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ_2251_물의양" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch08_1_그래프.BOJ_2251_물의양" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch08_1_그래프.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jdk.tools.jmod.Main" />
+      <module name="Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BOJ_1033_칵테일" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.BOJ_1707_이분그래프판별" />
+      <item itemvalue="Application.BOJ_2251_물의양" />
+      <item itemvalue="Application.BOJ_1325_효율적으로해킹" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BOJ_2251_물의양" />
+        <item itemvalue="Application.BOJ_1707_이분그래프판별" />
+        <item itemvalue="Application.BOJ_1325_효율적으로해킹" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22f267e5-d4f3-478c-9cbb-8ec0d4e51b03" name="Changes" comment="algo: solved" />
+      <created>1683098600473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683098600473</updated>
+      <workItem from="1683098601965" duration="2893000" />
+      <workItem from="1683184892633" duration="1694000" />
+      <workItem from="1683283873916" duration="1191000" />
+      <workItem from="1683363097648" duration="1190000" />
+      <workItem from="1683522618000" duration="546000" />
+      <workItem from="1683548571830" duration="1790000" />
+      <workItem from="1683613339602" duration="8329000" />
+      <workItem from="1683688018349" duration="7708000" />
+      <workItem from="1683776390694" duration="8687000" />
+      <workItem from="1683881863105" duration="1713000" />
+      <workItem from="1683904086793" duration="591000" />
+      <workItem from="1683953375315" duration="5501000" />
+      <workItem from="1684043700757" duration="3194000" />
+      <workItem from="1684121091874" duration="17832000" />
+      <workItem from="1684222581262" duration="6142000" />
+      <workItem from="1684291300306" duration="12854000" />
+      <workItem from="1684306952549" duration="812000" />
+      <workItem from="1684399978589" duration="7391000" />
+      <workItem from="1684477023239" duration="1995000" />
+      <workItem from="1684505153275" duration="1815000" />
+      <workItem from="1684591930719" duration="706000" />
+      <workItem from="1684652190584" duration="8772000" />
+      <workItem from="1684740210088" duration="9436000" />
+      <workItem from="1684810802702" duration="10296000" />
+      <workItem from="1684897957897" duration="7418000" />
+      <workItem from="1684992360973" duration="30000" />
+      <workItem from="1685000360151" duration="3302000" />
+      <workItem from="1685078153177" duration="2210000" />
+      <workItem from="1685422836233" duration="10612000" />
+      <workItem from="1685459109134" duration="21000" />
+      <workItem from="1685506347183" duration="561000" />
+      <workItem from="1685506925842" duration="8318000" />
+      <workItem from="1685609776496" duration="79000" />
+      <workItem from="1685695881002" duration="3366000" />
+      <workItem from="1685768430900" duration="10204000" />
+      <workItem from="1685778832154" duration="169000" />
+      <workItem from="1685797666222" duration="596000" />
+      <workItem from="1685971501864" duration="4557000" />
+      <workItem from="1686053965821" duration="3006000" />
+      <workItem from="1686065416946" duration="311000" />
+    </task>
+    <task id="LOCAL-00001" summary="[BOJ-11004] K번째수 sojeong solved">
+      <created>1683098722744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683098722744</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[BOJ-1167] 트리의 지름 구하기 sojeong solved">
+      <created>1683633750216</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683633750216</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[BOJ-1167] 트리의 지름 구하기 sojeong solved">
+      <created>1683635632587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683635632587</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[BOJ-1260] edited dfs,bfs sojeong solved">
+      <created>1683883024408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683883024408</updated>
+    </task>
+    <task id="LOCAL-00005" summary="setting">
+      <created>1683958782675</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683958782675</updated>
+    </task>
+    <task id="LOCAL-00006" summary="setting">
+      <created>1683959933559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683959933559</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[BOJ_1920] 원하는 정수찾기 SOJEONG SOLVED">
+      <created>1683960116987</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683960116987</updated>
+    </task>
+    <task id="LOCAL-00008" summary="setting">
+      <created>1683962455733</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683962455733</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[BOJ_1744] 수묶기 sj solved">
+      <created>1684130884944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684130884945</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[BOJ_1300] K번째 수 sj solving">
+      <created>1684140754519</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684140754519</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[BOJ_1300] K번째 수 sj solving">
+      <created>1684148640362</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684148640362</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[BOJ_1300] K번째 수 sj solving">
+      <created>1684149156422</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684149156422</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[BOJ_1300] K번째 수 sj solving">
+      <created>1684247975455</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684247975456</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[BOJ_1300] K번째 수 sj solving">
+      <created>1684250063688</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684250063688</updated>
+    </task>
+    <task id="LOCAL-00015" summary="setting">
+      <created>1684305119289</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684305119289</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[BOJ_1541] 잃어버린괄호 sj solved">
+      <created>1684408045577</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684408045577</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[BOJ_1929] 소수구하기 sj solving">
+      <created>1684411484574</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684411484574</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[BOJ_1929] 소수구하기 sj solved">
+      <created>1684504970268</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684504970268</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[BOJ_1929] 소수구하기 sj solved">
+      <created>1684506200361</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684506200361</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[BOJ_1934] 최소공배수 sj solved">
+      <created>1684747288554</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684747288554</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[BOJ_11689] 오일러피 sj solved">
+      <created>1684758390162</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684758390162</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[BOJ_1016] 제곱ㄴㄴ수 sj solving">
+      <created>1684819638473</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684819638473</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[BOJ_1016] 제곱아닌수 sj solving">
+      <created>1684820884604</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684820884604</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[BOJ_1033] 칵테일 sj solved">
+      <created>1685433422359</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685433422359</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[BOJ_1325] 효율적인 해킹 sj solved">
+      <created>1685514719959</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1685514719960</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[BOJ_2251] 물통 sj solving">
+      <created>1685770258191</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685770258191</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[BOJ_2251] 물통 sj solving">
+      <created>1685983215393</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1685983215393</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[BOJ-11004] K번째수 sojeong solved" />
+    <MESSAGE value="[BOJ-1167] 트리의 지름 구하기 sojeong solved" />
+    <MESSAGE value="[BOJ-1260] edited dfs,bfs sojeong solved" />
+    <MESSAGE value="[BOJ_1920] 원하는 정수찾기 SOJEONG SOLVED" />
+    <MESSAGE value="[BOJ_1744] 수묶기 sj solved" />
+    <MESSAGE value="[BOJ_1300] K번째 수 sj solving" />
+    <MESSAGE value="setting" />
+    <MESSAGE value="[BOJ_1541] 잃어버린괄호 sj solved" />
+    <MESSAGE value="[BOJ_1929] 소수구하기 sj solving" />
+    <MESSAGE value="[BOJ_1929] 소수구하기 sj solved" />
+    <MESSAGE value="[BOJ_1934] 최소공배수 sj solved" />
+    <MESSAGE value="[BOJ_11689] 오일러피 sj solved" />
+    <MESSAGE value="[BOJ_1016] 제곱ㄴㄴ수 sj solving" />
+    <MESSAGE value="[BOJ_1016] 제곱아닌수 sj solving" />
+    <MESSAGE value="[BOJ_1033] 칵테일 sj solved" />
+    <MESSAGE value="[BOJ_1325] 효율적인 해킹 sj solved" />
+    <MESSAGE value="[BOJ_2251] 물통 sj solving" />
+    <option name="LAST_COMMIT_MESSAGE" value="[BOJ_2251] 물통 sj solving" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Algorithm$BOJ_1541_.ic" NAME="BOJ_1541_최솟값만드는괄호배치 Coverage Results" MODIFIED="1684408449797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ch06_1_그리디.*</FILTER>
+    </SUITE>
+  </component>
+</project>

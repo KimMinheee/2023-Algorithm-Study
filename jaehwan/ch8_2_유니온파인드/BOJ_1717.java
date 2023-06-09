@@ -34,11 +34,14 @@ public class BOJ_1717 {
     }
     //각 노드 a에 관해 a가 속한 집합의 대표노드를 반환하는 연산
     public static int find(int a) { // find 연산 / 자신이 속한 대표값 반환
-        if (a == parent[a])
-            return a;
-        else
+        if (a == parent[a]) { //인덱스의 값과 벨류가 같은지 확인
+            return a;}
+        else {
             //경로압축
-            return parent[a] = find(parent[a]); // a의 대표 노드값을 변경 -> 재귀함수의 형태로 구현
+            return parent[a] = find(parent[a]);
+            //value값을 index로 바꿔서 재귀
+            // 재귀가 빠져나오면서 대표값으로 바뀐다
+        }
     }
     public static boolean same(int a, int b) { // 두 원소가 같은 집합인지 확인
         a = find(a);

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f267e5-d4f3-478c-9cbb-8ec0d4e51b03" name="Changes" comment="" />
+    <list default="true" id="22f267e5-d4f3-478c-9cbb-8ec0d4e51b03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sojeong/ch08_2_유니온파인드/BOJ_1043_거짓말쟁이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sojeong/ch08_2_유니온파인드/BOJ_1717_집합표현.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sojeong/ch08_2_유니온파인드/BOJ_1976_여행계획.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sojeong/ch08_3_위상정렬/BOJ_2252_줄세우기.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,30 +63,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Algorithm",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Algorithm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ch07_3_유클리드" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ_2251_물의양">
+  <component name="RunManager" selected="Application.BOJ_2252_줄세우기">
     <configuration name="BOJ_1033_칵테일" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -135,6 +141,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BOJ_2252_줄세우기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch08_3_위상정렬.BOJ_2252_줄세우기" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch08_3_위상정렬.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="jdk.tools.jmod.Main" />
       <module name="Algorithm" />
@@ -145,12 +164,14 @@
     <list>
       <item itemvalue="Application.BOJ_1033_칵테일" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.BOJ_2252_줄세우기" />
       <item itemvalue="Application.BOJ_1707_이분그래프판별" />
       <item itemvalue="Application.BOJ_2251_물의양" />
       <item itemvalue="Application.BOJ_1325_효율적으로해킹" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ_2252_줄세우기" />
         <item itemvalue="Application.BOJ_2251_물의양" />
         <item itemvalue="Application.BOJ_1707_이분그래프판별" />
         <item itemvalue="Application.BOJ_1325_효율적으로해킹" />
@@ -207,7 +228,13 @@
       <workItem from="1685797666222" duration="596000" />
       <workItem from="1685971501864" duration="4557000" />
       <workItem from="1686053965821" duration="3006000" />
-      <workItem from="1686065416946" duration="311000" />
+      <workItem from="1686065416946" duration="624000" />
+      <workItem from="1686114071333" duration="1463000" />
+      <workItem from="1686208922641" duration="1821000" />
+      <workItem from="1686232398021" duration="1206000" />
+      <workItem from="1686325041348" duration="311000" />
+      <workItem from="1686365249877" duration="2459000" />
+      <workItem from="1686370104500" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="[BOJ-11004] K번째수 sojeong solved">
       <created>1683098722744</created>
@@ -398,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685983215393</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="setting">
+      <created>1686065915572</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1686065915572</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +456,6 @@
     <MESSAGE value="[BOJ_1920] 원하는 정수찾기 SOJEONG SOLVED" />
     <MESSAGE value="[BOJ_1744] 수묶기 sj solved" />
     <MESSAGE value="[BOJ_1300] K번째 수 sj solving" />
-    <MESSAGE value="setting" />
     <MESSAGE value="[BOJ_1541] 잃어버린괄호 sj solved" />
     <MESSAGE value="[BOJ_1929] 소수구하기 sj solving" />
     <MESSAGE value="[BOJ_1929] 소수구하기 sj solved" />
@@ -433,7 +466,8 @@
     <MESSAGE value="[BOJ_1033] 칵테일 sj solved" />
     <MESSAGE value="[BOJ_1325] 효율적인 해킹 sj solved" />
     <MESSAGE value="[BOJ_2251] 물통 sj solving" />
-    <option name="LAST_COMMIT_MESSAGE" value="[BOJ_2251] 물통 sj solving" />
+    <MESSAGE value="setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

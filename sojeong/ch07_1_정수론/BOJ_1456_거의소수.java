@@ -1,52 +1,38 @@
 package ch07_1_정수론;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
-import java.util.StringTokenizer;
-import javax.swing.plaf.synth.SynthTextAreaUI;
 
 public class BOJ_1456_거의소수 {
-
-    static long A, B;
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        A = Long.parseLong(st.nextToken());
-        B = Long.parseLong(st.nextToken());
-        long[] arr = new long[10000001];
-        int count = 0;
-        for (int i = 2; i <= Math.sqrt(arr.length); i++) {
-            arr[i] = i;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long Min = sc.nextLong(); //시작
+        long Max = sc.nextLong(); //끝
+        int count = 0; //거의 소수 찾기
+        long[] A = new long[10000001]; //10^7
+        //처음 초기화
+        for (int i = 2; i < A.length; i++) {
+            A[i] = i;
         }
-        primeNumber(arr);
-
-        // 거의 소수 구하기
+        //소수만 남기기
+        for (int i = 2; i <= Math.sqrt(A.length); i++) { //제곱근까지 계산하기
+            if (A[i] == 0) {//0이면 패스
+                continue;
+            }
+            for (int j = i + i; j < A.length; j = j + i) { //i배수 탐색
+                A[j] = 0;//배수 지우기
+            }
+        }
         for (int i = 2; i < 10000001; i++) {
-            if (arr[i] != 0) { // 0이 아닐때 계산
-                long temp = arr[i];
-                while((double)arr[i] <= (double)B/(double)temp){ // MAX
-                    if((double)arr[i] >= (double)A/(double)temp){ //MIN
-                        count ++;
+            if (A[i] != 0) { //0이외의 숫자가 들어있는 경우만
+                long temp = A[i]; //
+                while ((double)A[i]*(double)temp <= (double)Max) { //long형 넘어가지 않게 조절해주기
+                    if ((double)A[i]*(double)temp >= (double)Min ) { //시작 값보다 큰지 계산해서 체크
+                        count++;
                     }
-                    temp = temp*arr[i];
+                    temp = temp * A[i];
                 }
             }
         }
-
         System.out.println(count);
-    }
-
-    public static void primeNumber(long[] arr) {
-        for (int i = 2; i < 10000001; i++) {
-            for (int j = 2 * i; j <= arr.length - 1; j = j + i) { // i배수를 탐색하기 위해서 j+i
-                if (arr[j] == 0) { // 소수가 아니면
-                    continue;
-                }
-                arr[j] = 0; //배수 다 지워주기
-            }
-        }
     }
 }

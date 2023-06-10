@@ -22,8 +22,8 @@ public class BOJ_1747_팰린드롬 {
 
     }
     public static boolean isPrime(int k){ // 소수 구하기
-        for(int i=2; i<=Math.sqrt(k);i++){
-            if(k %i ==0){
+        for(int i=2; i<=Math.sqrt(k);i++){ //제곱근까지 반복문 돌기
+            if(k % i ==0){
                 return false;
             }
         }
@@ -31,9 +31,9 @@ public class BOJ_1747_팰린드롬 {
     }
     public static boolean isPalindrome(int m){ // 팰린드롬 판별
         char temp[] = String.valueOf(m).toCharArray(); //Integer값 char배열로 변환
-        int s =0;
-        int e =temp.length-1;
-        while(s<e){
+        int s =0; //시작 포인터
+        int e =temp.length-1; //끝 포인터
+        while(s < e){
             if(temp[s] != temp[e]) //시작 인덱스랑 끝 인덱스값이 다를 때 false
                 return false;
             s++;

@@ -13,14 +13,14 @@ public class BOJ_11689_오일러피 {
         long pi = n;
         for (long i = 2; i<=Math.sqrt(n); i++) { // 제곱근까지만 진행
             if (n % i == 0) { // i가 소인수인지 확인
-                pi = pi - pi / i; //결괏값 업데이트
+                pi = pi - pi / i; //결괏값 업데이트(오일러피 공식)
             }
-            while (n % i == 0) { // 2^7*11 일 때 2^7없애고 11만 남김
+            while (n % i == 0) { // 0이 아닐때까지 나눔
                 n /= i;
             }
 
         }
-        if (n > 1) { // 아직 소인수 구성이 남아 있을 때
+        if (n > 1) { // n이 소수일때
             pi = pi -pi / n;
         }
         System.out.println(pi);

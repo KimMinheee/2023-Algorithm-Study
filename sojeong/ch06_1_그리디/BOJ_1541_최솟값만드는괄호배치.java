@@ -10,7 +10,7 @@ public class BOJ_1541_최솟값만드는괄호배치 {
         for (int i = 0; i < str.length; i++) {
             int temp = mySum(str[i]);
             if (i == 0) {
-                ans += temp; // 문자열 가장 앞에 있는 값 더함
+                ans += temp; // 문자열 가장 앞에 있는 값
             } else {
                 ans -= temp; // 그 이후부터 플러스 연산한 값들은 빼줌
             }
@@ -18,7 +18,7 @@ public class BOJ_1541_최솟값만드는괄호배치 {
         System.out.println(ans);
     }
 
-    static int mySum(String a) {
+    static int mySum(String a) { // 더하기 연산
         int sum = 0;
         String temp[] = a.split("[+]");
         for (int k = 0; k < temp.length; k++) {

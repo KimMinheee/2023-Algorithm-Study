@@ -26,11 +26,11 @@ public class BOJ_1934_최소공배수 {
 
     }
     private static int gcd(int N, int M) {
-        if(M == 0){ // 계속 나누다가 0이 되면 return
-            return N;
+        if(M != 0){
+            return gcd(M, N%M);
         }
         else{
-            return gcd(M, N%M);
+            return N; // 계속 나누다가 0이 되면 return
         }
     }
 }

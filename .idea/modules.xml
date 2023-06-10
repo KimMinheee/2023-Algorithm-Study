@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/2023-Algorithm-Study.iml" filepath="$PROJECT_DIR$/2023-Algorithm-Study.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jaehwan/jaehwan.iml" filepath="$PROJECT_DIR$/jaehwan/jaehwan.iml" />
+HEAD
+
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Algorithm.iml" filepath="$PROJECT_DIR$/.idea/modules/Algorithm.iml" />
+ae68329c8bbebaf853c14ed12150f55259d0b942
     </modules>
   </component>
 </project>

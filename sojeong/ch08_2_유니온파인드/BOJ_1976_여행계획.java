@@ -15,20 +15,21 @@ public class BOJ_1976_여행계획 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
 
-        int N = Integer.parseInt(br.readLine());
-        int M = Integer.parseInt(br.readLine());
+        int N = Integer.parseInt(br.readLine()); // 도시의 수
+        int M = Integer.parseInt(br.readLine()); // 여행 계획에 속한 도시의 수
 
+        // 도시 연결 데이터 저장
         parent = new int[N + 1];
         for (int i = 1; i <= N; i++) {
             parent[i] = i;
         }
 
-        for (int i = 1; i <= N; i++) {
+        for (int i = 1; i <= N; i++) { // 도시 수만큼 반복
             st = new StringTokenizer(br.readLine());
             for (int j = 1; j <= N; j++) {
-                int temp = Integer.parseInt(st.nextToken());
+                int temp = Integer.parseInt(st.nextToken()); // 연결 정보 입력 받기 ex) 0 1 0
 
-                // 연결된 부분은 합집합 연산함.
+                // 도시가 연결 되어 있으면 합집합 연산(union)
                 if (temp == 1) {
                     union(i, j);
                 }
@@ -40,8 +41,7 @@ public class BOJ_1976_여행계획 {
         for (int i = 1; i < M; i++) {
             int now = Integer.parseInt(st.nextToken());
 
-            // 맨 처음 출발 도시와 연결되어있지 않은 도시가 있으면
-            // 여행 계획이 불가능한 것임.
+            // 여행 계획 도시들이 1개의 대표 도시로 연결돼 있는지 확인
             if (start != find(now)) {
                 bw.write("NO\n");
                 bw.flush();

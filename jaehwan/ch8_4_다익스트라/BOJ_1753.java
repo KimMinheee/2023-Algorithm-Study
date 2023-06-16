@@ -18,7 +18,7 @@ class Node implements Comparable<Node>{
 public class BOJ_1753 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    private static final int INF = 100_000_000;
+    private static final int MAX = 999999;
     static int v,e,k;
     static List<Node>[] list;
     static int[] dist;
@@ -32,7 +32,7 @@ public class BOJ_1753 {
         list = new ArrayList[v + 1];
         dist = new int[v + 1];
 
-        Arrays.fill(dist, INF);
+        Arrays.fill(dist, MAX );
 
         for(int i = 1; i <= v; i++){
             list[i] = new ArrayList<>();
@@ -52,7 +52,7 @@ public class BOJ_1753 {
         dijkstra(k);
         // 출력 부분
         for(int i = 1; i <= v; i++){
-            if(dist[i] == INF) sb.append("INF\n");
+            if(dist[i] == MAX ) sb.append("INF\n");
             else sb.append(dist[i] + "\n");
         }
 

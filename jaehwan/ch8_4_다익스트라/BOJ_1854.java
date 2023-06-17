@@ -6,15 +6,12 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-
 class Node_1854 implements Comparable<Node_1854> {
     int v, weight;
-
     public Node_1854(int v, int weight){
         this.v = v;
         this.weight = weight;
     }
-
     @Override
     public int compareTo(Node_1854 o) {
         return weight - o.weight;
@@ -32,8 +29,12 @@ public class BOJ_1854 {
         M = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 
-        init();
-
+        dist = new PriorityQueue[N + 1];
+        edge = new ArrayList[N + 1];
+        for (int i = 0 ; i < N + 1; ++i) {
+            dist[i] = new PriorityQueue<>(K);
+            edge[i] = new ArrayList<>();
+        }
         for (int i = 0; i < M; ++i) {
             st = new StringTokenizer(br.readLine());
             int u = Integer.parseInt(st.nextToken());
@@ -42,9 +43,11 @@ public class BOJ_1854 {
             edge[u].add(new Node_1854(v, weight));
         }
 
-        dijkstra(1);
-        print();
-
+        dijkstra(1)
+        for (int i = 1; i <= N; ++i){
+            if (dist[i].size() == K) System.out.println(dist[i].peek() * -1);
+            else System.out.println(-1);
+        }
         br.close();
     }
 
@@ -66,22 +69,6 @@ public class BOJ_1854 {
                     pq.add(new Node_1854(next.v, cur.weight + next.weight));
                 }
             }
-        }
-    }
-
-    private static void print() {
-        for (int i = 1; i <= N; ++i){
-            if (dist[i].size() == K) System.out.println(dist[i].peek() * -1);
-            else System.out.println(-1);
-        }
-    }
-
-    private static void init() {
-        dist = new PriorityQueue[N + 1];
-        edge = new ArrayList[N + 1];
-        for (int i = 0 ; i < N + 1; ++i) {
-            dist[i] = new PriorityQueue<>(K);
-            edge[i] = new ArrayList<>();
         }
     }
 }

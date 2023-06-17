@@ -18,11 +18,11 @@ public class BOJ_1747 {
                 A[j] = 0;//배수 지우기
             }
         }
-        while(true){
+        while(true){ //1씩 증가시키며 펠린드롬 수가 맞는지 체크
             if (A[n] != 0) { //0이외의 숫자가 들어있는 경우만
                 int num=A[n];
                 if(pelin(num)){
-                    System.out.println(num);
+                    System.out.println(num); //맞으면 출력
                     break;
                 }
             }

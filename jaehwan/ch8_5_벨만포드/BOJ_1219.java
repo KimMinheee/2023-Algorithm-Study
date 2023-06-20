@@ -45,7 +45,7 @@ public class BOJ_1219 {
                 //도착 도시값 < 시작 도시값 + 도착 도시값 - 에지 가중치
                 else if(dist[now_edge.end] < dist[now_edge.st]+money[now_edge.end]-now_edge.cost){
                     dist[now_edge.end] = dist[now_edge.st]+money[now_edge.end]-now_edge.cost;
-                    if(i>=N) //사이클이 생기면 어차피 무수히 많이 돔
+                    if(i>=N) //(벨만포드에서 원래 더 돈다고 값이 바뀌면 음수 사이클) 여유롭게 더 돌림 이때 값의 변경이 생기면 사이클 -> 양수 사이클에 연결체크
                         dist[now_edge.end] = Long.MAX_VALUE;
                 }
             }

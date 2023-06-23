@@ -19,24 +19,27 @@ public class 6단계법칙{
             this.value = value;
         }
     }
+
+
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new)InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
         st = new StringTokenizer(br.readLine());
-        N = Integer.parseInt(st.nextToken()); // 유저의 수
-        int M = Integer.parseInt(st.nextToken()); // 친구 관계의 수
+        N = Integer.parseInt(st.nextToken());
+        int M = integer.parseInt(st.nextToken());
 
         arr = new int[N + 1][N + 1];
         for(int i=0; i<M; i++){
             st = new StringTokenizer(br.readLine());
 
             int x = Integer.parseInt(st.nextToken());
-            int y = Integer.parseInt(st.nestToken());
+            int y = Integer.parseInt(st.nextToken());
 
             arr[x][y] = 1;
-            arr[x][y] = 1;
+            arr[y][x] = 1;
         }
+
         for(int i=1; i<=N; i++){
             visit = new boolean[N + 1];
             BFS(i);
@@ -47,31 +50,34 @@ public class 6단계법칙{
 
 
 
-        static void BFS(int start) {
-            Queue<Bacon> que = new LinkedList<>();
-            int count = 0;
+        static void BFS(int start){
+        Queue<Bacon> que = new LinkedList<>();
+        int count = 0;
 
-            // 자기 자신은 true 처리를 하고 시작
-            visit[start] = true;
-            que.offer(new Bacon(start, 0));
 
-            while (!que.isEnpty()) {
-                Bacon bacon = que.poll();
-                count += bacon.value;
+        visit[start] = true;
+        que.offer(new Bacon(start,0));
 
-                for (int i = 1; i <= N; i++) {
-                    int num = arr[bacon.num][i];
+        while( !que.isEmpty()){
+            Bacon bacon = que.poll();
+            count += bacon.value;
 
-                    if (num == 1 && visit[i] == false) {
-                        visit[i] = true;
-                        que.offer(new Bacon(i, bacon.value + 1));
-                    }
+            for(int i=1; i<=N; i++){
+                int num = arr[bacon.num][i];
+                if(num == 1 && visit[i] == false){
+                    visit[i] = true;
+                    que.offer(new Bacon(i, bacon.value + 1));
                 }
             }
-            if(min_count>count){
-                min_count = count;
-                result = start;
-            }
-        } // End of BFS
+        }
+        if(min_count > count) {
+            min_count = count;
+            result = start;
+        }
+        }
+
+
+
+        // End of BFS
 
 } // End of class

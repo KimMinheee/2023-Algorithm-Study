@@ -34,7 +34,7 @@ public class BOJ_11657 { //[BOJ_11657]타임머신 jaehwan solved - 벨만포드
             }
         }
         boolean mCycle=false;
-        for(int i=0;i< M;i++){ //음수사이클이 있는지 확인하기 한번더 즉 n번까지 반복
+        for(int i=0;i< M;i++){ //음수사이클이 있는지 확인하기
             Edge edge =edges[i];
             if(distance[edge.start]!= Integer.MAX_VALUE && distance[edge.end]>distance[edge.start]+edge.time){
                 mCycle=true;

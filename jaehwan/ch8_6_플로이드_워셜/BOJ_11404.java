@@ -34,9 +34,7 @@ public class BOJ_11404 { //[BOJ_11404]버스노선 jaehwan solved - 플로이드
         for(int k=1;k<=N;k++){
             for(int i=1;i<=N;i++){
                 for(int j=1;j<=N;j++){
-                    if(distance[i][j]>distance[i][k]+distance[k][j]){
-                        distance[i][j]=distance[i][k]+distance[k][j];
-                    }
+                    distance[i][j]=Math.min(distance[i][j],distance[i][k]+distance[k][j]);
                 }
             }
         }

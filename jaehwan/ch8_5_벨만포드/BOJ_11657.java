@@ -34,6 +34,8 @@ public class BOJ_11657 { //[BOJ_11657]타임머신 jaehwan solved - 벨만포드
             }
         }
         boolean mCycle=false;
+        //모든 에지를 한번씩 다시 사용해 업데이트되는 노드가 있는지 확인
+        //위에서 n-1번 사용했으니 여기서 한번더 돌리면 n만큼 사용하는것
         for(int i=0;i< M;i++){ //음수사이클이 있는지 확인하기
             Edge edge =edges[i];
             if(distance[edge.start]!= Integer.MAX_VALUE && distance[edge.end]>distance[edge.start]+edge.time){

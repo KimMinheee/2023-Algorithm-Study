@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class BOJ_11657 { //타임머신으로 빨리가기
+public class BOJ_11657 { //[BOJ_11657]타임머신 jaehwan solved - 벨만포드 사용
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static int N,M;
@@ -27,7 +27,7 @@ public class BOJ_11657 { //타임머신으로 빨리가기
         for(int i=1;i<N;i++){ //n-1만큼
             for(int j=0; j<M; j++){//n만큼
                 Edge edge=edges[j]; //현재 에지 데이터 가져옴
-                //출발 노드가 무한대가 아니라 종료 노드값 <출발 노드값 + 에지 가중치 일때 거리 배열 업데이트
+                //출발 노드가 무한대가 아니라 종료 노드값 > 출발 노드값 + 에지 가중치 일때 거리 배열 업데이트
                 if(distance[edge.start]!= Integer.MAX_VALUE && distance[edge.end]>distance[edge.start]+edge.time){
                     distance[edge.end]=distance[edge.start]+edge.time;
                 }

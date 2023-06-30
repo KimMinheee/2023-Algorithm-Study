@@ -17,7 +17,7 @@ public class BOJ_11725 { //[BOJ_11725]트리의부모찾기 jaehwan solved - dfs
             tree[i] = new ArrayList<>(); //인접리스트 초기화
         }
         for (int i = 1; i < N; i++) {
-            int n1 = sc.nextInt(); 
+            int n1 = sc.nextInt();
             int n2 = sc.nextInt();
             tree[n1].add(n2); //양방향 데이터 저장
             tree[n2].add(n1);
@@ -29,9 +29,9 @@ public class BOJ_11725 { //[BOJ_11725]트리의부모찾기 jaehwan solved - dfs
     }
     static void DFS(int number) {
         visit[number] = true;
-        for (int i : tree[number]) {
+        for (int i : tree[number]) { //tree[1]에 연결된 6,4
             if (!visit[i]) {
-                answer[i] = number;
+                answer[i] = number; //dfs 탐색전 노드가 정답노드가 된다
                 DFS(i);
             }
         }

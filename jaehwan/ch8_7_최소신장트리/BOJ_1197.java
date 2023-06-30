@@ -20,20 +20,18 @@ public class BOJ_1197 {//[BOJ_1197]최소신장트리 jaehwan solved - 우선순
             int v = sc.nextInt();
             queue.add(new pEdge(s, e, v));
         }
-        int useEdge = 0;
-        int result = 0;
-        while (useEdge < N - 1) {
+        int useEdge = 0;//사용한 에지
+        int result = 0;//결과
+        while (useEdge < N - 1) { //n-1번 만큼 반복
             pEdge now = queue.poll();
-            if (find(now.s) != find(now.e)) {
-                union(now.s, now.e);
-                result = result + now.v;
+            if (find(now.s) != find(now.e)) {//시작 노드 대표값과 도착노드 대표값 비교
+                union(now.s, now.e);//다르면 합침
+                result = result + now.v;//결과값에 가중치 더해줌
                 useEdge++;
             }
         }
-        System.out.println(result);
-
+        System.out.println(result); //출력
     }
-
     public static void union(int a, int b) {
         a = find(a);
         b = find(b);
@@ -42,14 +40,13 @@ public class BOJ_1197 {//[BOJ_1197]최소신장트리 jaehwan solved - 우선순
         }
     }
 
-    public static int find(int a) {
+    public static int find(int a) {//속한 집합의 대표 노드 반환
         if (a == parent[a])
             return a;
         else
-            return parent[a] = find(parent[a]);
+            return parent[a] = find(parent[a]); //값이 대표값과 다르면 바꿔주고 반환
     }
 }
-
 class pEdge implements Comparable<pEdge> {
     int s;
     int e;
@@ -60,7 +57,6 @@ class pEdge implements Comparable<pEdge> {
         this.e = e;
         this.v = v;
     }
-
     @Override
     public int compareTo(pEdge o) {
         // TODO Auto-generated method stub

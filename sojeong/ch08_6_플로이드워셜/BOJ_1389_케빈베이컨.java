@@ -62,6 +62,5 @@ public class BOJ_1389_케빈베이컨 {
         }
 
         System.out.println(ans);
-
     }
 }

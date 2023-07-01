@@ -9,11 +9,11 @@ public class BOJ_11403_경로찾기 {
 
     // 자료구조 선언하기(그래프 정보 저장, 최단거리 저장)
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    static int N; // 도시수(노드), 버스 노선의 개수(엣지)
+    static int N;
     static int distance[][];
 
     public static void main(String[] args) throws IOException {
-        N = Integer.parseInt(br.readLine()); // 도시 수(노드)
+        N = Integer.parseInt(br.readLine());
         distance = new int[N][N];
         for (int i = 0; i < N; i++) {  // 입력되는 인접 행렬 데이터를 distance 행렬에 그대로 저장
             StringTokenizer st = new StringTokenizer(br.readLine());

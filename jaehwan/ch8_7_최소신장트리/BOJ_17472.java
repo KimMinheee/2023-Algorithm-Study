@@ -45,7 +45,7 @@ public class BOJ_17472 {//[BOJ_17472]다리만들기 jaehwan solving - bfs,mst �
             for(int j = 0; j < list[i].size(); j++) {
                 Node island = list[i].get(j);
                 for(int k = 0; k < 4; k++) {
-                    find_bridge(island.x, island.y, i, k, -1);
+                    find_bridge(island.x, island.y, i, k, -1); //좌표,
                 }
             }
         }
@@ -94,12 +94,13 @@ public class BOJ_17472 {//[BOJ_17472]다리만들기 jaehwan solving - bfs,mst �
 
     public static void find_bridge(int x, int y, int num, int dir, int len) {
         if(map[x][y] != 0 && map[x][y] != num) { //다른 섬을 만남
+            //다리 길이가 2이상
             if(len >= 2) pq.offer(new Mst_Node(num, map[x][y], len));
             return;
         }
 
-        int nx = x + dx[dir];
-        int ny = y + dy[dir];
+        int nx = x + dx[dir];//방향 x축
+        int ny = y + dy[dir]; //y축
         if(nx < 0 || ny < 0 || nx >= n || ny >= m) return;
         if(map[nx][ny] == num) return;
         find_bridge(nx, ny, num, dir, len + 1);

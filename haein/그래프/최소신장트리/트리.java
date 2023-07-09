@@ -8,8 +8,11 @@ public class 트리 {
     static ArrayList<Integer>[] childList;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+//        노드의 개수 N 받기.
         N = sc.nextInt();
+//        부모 노드 정보 저장
         parent = new int[N];
+//        부모 노드가 존재하는 경우 childlist에 자식 정보 추가
         childList = new ArrayList[N];
 
         for (int i = 0; i < N; i++) {
@@ -37,13 +40,15 @@ public class 트리 {
         System.out.println(leafCnt);
     }
 
+
+//    자식 노드 정보 삭제
     static void removeNode(int node) {
         childList[node].clear();
         if (parent[node] != -1) {
             childList[parent[node]].remove((Integer) node);
         }
     }
-
+//  깊이우선탐색을 수행하여 리프 노드의 개수를 계산.
     static void dfs(int node) {
         if (node == removeNode) return;
         if (childList[node].isEmpty()) {

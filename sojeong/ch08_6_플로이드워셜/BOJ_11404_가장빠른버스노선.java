@@ -31,24 +31,24 @@ public class BOJ_11404_가장빠른버스노선 {
             int start = Integer.parseInt(st.nextToken());
             int end = Integer.parseInt(st.nextToken());
             int time = Integer.parseInt(st.nextToken());
-            if (distance[start][end] > time) {
+            if (distance[start][end] > time) { // 무한대랑 value 비교
                 distance[start][end] = time; // 노선 데이터 distance 행렬에 저장
             }
         }
 
         //플로이드 워셜 수행
-        for (int k = 1; k <= N; k++) {
+        for (int k = 1; k <= N; k++) { // k(경유지)
             for (int i = 1; i <= N; i++) {
                 for (int j = 1; j <= N; j++) {
-                    if (distance[i][j] > distance[i][k] + distance[k][j]) {
-                        distance[i][j] = distance[i][k] + distance[k][j];
+                    if (distance[i][j] > distance[i][k] + distance[k][j]) { // 시작점-끝점 거리가 경유지를 거치는 것보다 크면
+                        distance[i][j] = distance[i][k] + distance[k][j]; // 경유지 거치는 경로가 더 짧다는 뜻이기 때문에 update
                     }
                 }
             }
         }
         for (int i = 1; i <= N; i++) {
             for (int j = 1; j <= N; j++) {
-                if (distance[i][j] == 100000001) {
+                if (distance[i][j] == 100000001) { // 한번도 안거친 배열
                     System.out.println("0 ");
                 } else {
                     System.out.println(distance[i][j] + " ");

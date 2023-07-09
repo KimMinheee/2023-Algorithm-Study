@@ -2,7 +2,7 @@ package haein.그래프.최소신장트리;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class 최소스패닝트리 {
     static int[] parent;
 
     static class Edge implements Comparable<Edge> {

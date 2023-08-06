@@ -7,7 +7,7 @@ public class BOJ_1722 {//[BOJ_1722]순열순서 jaehwan solved
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int[] arr;
     static boolean[] visited = new boolean[21];
-    static long[] f = new long[21];
+    static long[] f = new long[21];//순열 경우의 수 저장 20!~1!
 
     public static void main(String[] args) throws IOException {
 
